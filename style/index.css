@@ -105,11 +105,10 @@ h2:hover {
 }
 
 @media print {
-    body {}
-
     body,
     .container {
         -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
         font-size: 10pt;
         width: 595pt;
         height: 842pt;
