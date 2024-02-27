@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Edin Scieller - CV</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333333;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            line-height: 1.4;
+        }
+
+        .container {
+            display: flex;
+            max-width: 900px;
+            margin: 30px auto;
+            background-color: #ffffff;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        .container:hover {
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+        }
+
+        .sidebar {
+            width: 30%;
+            background: #007B9E;
+            /* Darker blue gradient */
+            color: white;
+            padding: 20px;
+            box-shadow: inset -5px 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .main-content {
+            width: 70%;
+            padding: 20px;
+            background: linear-gradient(145deg, #ffffff, #f0f0f0);
+        }
+
+        h1,
+        h2 {
+            font-weight: normal;
+        }
+
+        h1 {
+            margin: 0 0 20px 0;
+            font-size: 30px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 5px;
+            padding-bottom: 5px;
+            border-bottom: 3px solid #007B9E;
+            /* Darker blue for the bottom border */
+            transition: border-color 0.3s;
+        }
+
+        h2:hover {
+            border-color: #005f73;
+            /* Even darker blue on hover */
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .contact-info a,
+        .skills a,
+        .interests a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s, text-decoration 0.3s;
+        }
+
+        .contact-info a:hover,
+        .skills a:hover,
+        .interests a:hover {
+            color: #e0ffff;
+            text-decoration: underline;
+        }
+
+        .experience p,
+        .education p {
+            margin-bottom: 15px;
+        }
+
+        .pfp{
+            width: 200px;
+            height: 200px;
+            margin: auto;
+            display: block;
+        }
+
+        @media screen and (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar,
+            .main-content {
+                width: 100%;
+            }
+        }
+
+        @media print {
+            body {}
+
+            body,
+            .container {
+                -webkit-print-color-adjust: exact;
+                font-size: 10pt;
+                width: 595pt;
+                height: 842pt;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h1>Edin Scieller</h1>
+            <img class="pfp" src="./profile-pic_lighter.png"/>
+            <div class="section contact-info">
+                <h2>Contact</h2>
+                <p>📞 06.63.43.68.84</p>
+                <p>📧 scieller.edin@gmail.com</p>
+                <p>📍 1 square Professeur Rieux, 29200 Brest</p>
+            </div>
+            <div class="section skills">
+                <h2>Compétences</h2>
+                <li>Suite Google</li>
+                <li>Windows, Linux, MacOs</li>
+                <li>Slack</li>
+                <li>Anglais : fluent</li>
+                <li>Permis B</li>
+
+            </div>
+            <div class="section softSkills">
+                <h2>Soft skills</h2>
+                <li>Autonomie</li>
+                <li>Résolution de problémes</li>
+                <li>Curiosité</li>
+                <li>Ouverture d'esprit</li>
+
+            </div>
+            <div class="section interests">
+                <h2>Centres d'intérêt</h2>
+                <li>Informatique</li>
+                <li>Sciences</li>
+                <li>Cyclotourisme</li>
+                <li>Escalade</li>
+
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="section professional-summary">
+                <h2>Résumé professionnel</h2>
+                <p>Développeur dynamique et créatif, je possède une expérience essentielle dans la conception
+                    et le développement d'applications. Mes compétences s'étendent de l'analyse des besoins clients à la
+                    modélisation UML et à la création d'interfaces utilisateur. Je suis particulièrement motivé pour
+                    mettre en pratique mes compétences dans un cadre stimulant, avec l'ambition de
+                    participer activement à l'élaboration de solutions logicielles novatrices.</p>
+            </div>
+            <div class="section WorkSkills">
+                <h2>Compétences professionnelles</h2>
+                <ul>
+                    <li>Conception et développement d'applications</li>
+                    <li>Analyse des besoins clients</li>
+                    <li>Modélisation UML</li>
+                    <li>Conception d'interface utilisateur</li>
+                    <li>Rédaction de spécifications techniques</li>
+                    <li>Planification de projet</li>
+                    <li>Architecture microservices</li>
+                    <li>Modélisation de bases de données SQL et MongoDB</li>
+                    <li>Languages : Typescript, PHP, JAVA, C/C#, SQL</li>
+                    <li>Technos : Node.JS, Nest.JS, React, Postman, Cypress, MongoDB, PHPMyAdmin, Docker</li>
+                </ul>
+            </div>
+            <div class="section experience">
+                <h2>Expériences</h2>
+                <ul>
+                    <li><strong>Avril - Décembre 2023 - Concepteur Développeur - Alt Rennes</strong><br>
+                        Conception et développement d'une application de gestion et de partage d'événements.</li>
+                    <li><strong>Juin 2021 - Février 2023 - Directeur des opérations et RH - Brest - Donkey
+                            Republic</strong><br>
+                        <ul>
+                            <li>Gestion des équipes</li>
+                            <li>Recrutement</li>
+                            <li>Gestion des stocks de pieces détachés</li>
+                            <li>Création des tableaux de données</li>
+                            <li>Suivi des indicateurs de performances</li>
+                        </ul>
+                    </li>
+                    <li><strong>Juillet - Décembre 2017 - Brest - Animateur Numérique</strong><br>
+                        "Les petits débrouillards"</li>
+                </ul>
+            </div>
+            <div class="section education">
+                <h2>Formations</h2>
+                <ul>
+                    <li><strong>Concepteur Développeur d'Applications - Alt Rennes - 2023</strong></li>
+                    <li><strong>CQP Technicien Cycles - EMBA Quimper - 2020</strong></li>
+                    <li><strong>Licence 1 SPI (U.B.O.) - 2015/2016</strong></li>
+                    <li><strong>Formation au Langage C - École 42 (Paris) - Septembre 2014</strong></li>
+                    <li><strong>Bac STI2D - Lycée Dupuy De Lôme (Brest) - 2013/2014</strong><br>
+                        Option architecture & construction</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
